@@ -1,8 +1,8 @@
+def collector(array)
+  array.collect{|el| el.reverse}
+end
+
 def reverse_each_word(string)
   operating_array = string.split(" ")
-  the_returned = []
-  operating_array.each do |word|
-    the_returned << word.reverse
-  end
-  the_returned.join(" ")
+  collector(operating_array).join(" ")
 end
